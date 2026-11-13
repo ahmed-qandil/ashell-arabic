@@ -20,6 +20,8 @@ public class AccessUnavilableDialog extends BottomSheetDialog {
         View rootView = View.inflate(activity, R.layout.layout_dialog_shizuku_access, null);
 
         MaterialButton quit = rootView.findViewById(R.id.quit);
+        MaterialButton action = rootView.findViewById(R.id.action);
+        action.setVisibility(View.GONE);
 
         MaterialTextView title = rootView.findViewById(R.id.title);
         MaterialTextView text = rootView.findViewById(R.id.text);
