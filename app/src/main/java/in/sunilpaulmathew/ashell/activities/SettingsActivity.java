@@ -34,16 +34,6 @@ public class SettingsActivity extends BaseActivity {
         int spanCount = Utils.isPortraitMode(this) ? 1 : Utils.isTablet(this) ? 3 : 2;
 
         GridLayoutManager layoutManager = new GridLayoutManager(this, spanCount);
-        layoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
-            @Override
-            public int getSpanSize(int position) {
-                if (data.get(position).getPosition() == 0) {
-                    return spanCount;
-                } else {
-                    return 1;
-                }
-            }
-        });
 
         mRecyclerView.setItemAnimator(null);
         mRecyclerView.setLayoutManager(layoutManager);
@@ -52,14 +42,12 @@ public class SettingsActivity extends BaseActivity {
 
     private List<SettingsEntry> getData() {
         List<SettingsEntry> mData = new ArrayList<>();
-        mData.add(new SettingsEntry(getString(R.string.user_interface)));
         mData.add(new SettingsEntry(2, R.drawable.ic_theme, getString(R.string.app_theme), Settings.getAppTheme(this)));
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S && Settings.isDarkTheme(this)) {
             mData.add(new SettingsEntry(3, R.drawable.ic_amoled_theme, getString(R.string.app_theme_amoled), getString(R.string.app_theme_amoled_description), true, Settings.isAmoledBlackEnabled(this)));
         }
         mData.add(new SettingsEntry(4, R.drawable.ic_language, getString(R.string.language), Settings.getLanguageDescription(this)));
         mData.add(new SettingsEntry(5, R.drawable.ic_extras, getString(R.string.extras), getString(R.string.extras_description)));
-        mData.add(new SettingsEntry(getString(R.string.general)));
         mData.add(new SettingsEntry(6, R.drawable.ic_help, getString(R.string.examples), getString(R.string.examples_description)));
         return mData;
     }

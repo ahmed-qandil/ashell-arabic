@@ -18,15 +18,6 @@ public class SettingsEntry implements Serializable {
     private final String mTitle;
     private String mDescription;
 
-    public SettingsEntry(String title) {
-        this.mPosition = 0;
-        this.mIcon = Integer.MIN_VALUE;
-        this.mTitle = title;
-        this.mDescription = null;
-        this.mSwitch = false;
-        this.mEnabled = false;
-    }
-
     public SettingsEntry(int position, int icon, String title, String description) {
         this.mPosition = position;
         this.mIcon = icon;

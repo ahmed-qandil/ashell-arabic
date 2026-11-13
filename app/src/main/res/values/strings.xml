@@ -92,7 +92,6 @@
     <string name="file_type_directory">Directory</string>
     <string name="file_type_unknown">Unknown file type</string>
     <string name="files">Files</string>
-    <string name="general">General</string>
     <string name="get_info">Get info</string>
     <string name="granted">Granted</string>
     <string name="history">History</string>
@@ -160,7 +159,6 @@
     <string name="split_apks_count">"%d found (tap to learn more)</string>
     <string name="start">Start</string>
     <string name="su_warning_message">aShell is not designed for root-related uses. Aborting.</string>
-    <string name="user_interface">User interface</string>
     <string name="version">Version</string>
     <string name="version_code">Version code</string>
     <string name="yes">Yes</string>

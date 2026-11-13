@@ -100,7 +100,6 @@
     <string name="file_type_directory">"مجلد"</string>
     <string name="file_type_unknown">"نوع ملف غير معروف"</string>
     <string name="files">"الملفات"</string>
-    <string name="general">"عام"</string>
     <string name="get_info">"عرض المعلومات"</string>
     <string name="granted">"مُنح"</string>
     <string name="history">"السجل"</string>
@@ -151,7 +150,6 @@
     <string name="split_apks_count">"تم العثور على %d (اضغط لمعرفة المزيد)"</string>
     <string name="start">"ابدأ"</string>
     <string name="su_warning_message">"aShell غير مصمم للاستخدامات المرتبطة بالروت. تم الإيقاف."</string>
-    <string name="user_interface">"واجهة المستخدم"</string>
     <string name="version">"الإصدار"</string>
     <string name="version_code">"رمز الإصدار"</string>
     <string name="yes">"نعم"</string>

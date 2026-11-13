@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.AppCompatImageButton;
-import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.checkbox.MaterialCheckBox;
@@ -83,15 +82,8 @@ public class SettingsAdapter extends RecyclerView.Adapter<SettingsAdapter.ViewHo
             holder.mCheckBox.setVisibility(View.GONE);
         }
 
-        if (data.get(position).getPosition() == 0) {
-            holder.mTitle.setLayoutParams(new LinearLayoutCompat.LayoutParams(LinearLayoutCompat.LayoutParams.MATCH_PARENT,
-                    ViewGroup.LayoutParams.WRAP_CONTENT));
-            holder.mTitle.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
-            holder.mTitle.setTextColor(Settings.getColorAccent(context));
-        } else {
-            holder.mTitle.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_START);
-            holder.mTitle.setTextColor(Settings.getColorText(context));
-        }
+        holder.mTitle.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_START);
+        holder.mTitle.setTextColor(Settings.getColorText(context));
 
         Settings.setSlideInAnimation(holder.itemView, position);
     }
