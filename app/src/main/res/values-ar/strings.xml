@@ -71,12 +71,9 @@
     <string name="delete">"حذف"</string>
     <string name="delete_success_toast">"تم حذف %s بنجاح…"</string>
     <string name="deleting_message">"جارٍ حذف %s…"</string>
-    <string name="developer_contact">"الاتصال بالمطور"</string>
-    <string name="developer_contact_description">"هل تحتاج إلى مساعدة أو لديك ملاحظات؟ اتصل بالمطور"</string>
     <string name="disclaimer">"إخلاء المسؤولية"</string>
     <string name="disclaimer_description">"🧩 اعتماد Shizuku: يتطلب aShell بيئة Shizuku تعمل بالكامل لكي يعمل. يرجى التأكد من إعداد Shizuku قبل استخدام هذا التطبيق.
 👨‍💻 المعرفة الأساسية المطلوبة: يوصى بمعرفة أساسيات ADB وسطر أوامر Linux لاستخدامه بفعالية.
-🌐 مفتوح المصدر: aShell تطبيق مفتوح المصدر ومجاني للبناء. نرحب بالمساهمات والترجمات عبر GitLab و POEditor.
 ⚠️ لا مسؤولية: نحن غير مسؤولين عن أي مشاكل أو فقدان للبيانات أو أضرار قد تحدث أثناء استخدام هذا التطبيق."</string>
     <string name="dismiss">"رفض"</string>
     <string name="edit">"تعديل"</string>
@@ -112,7 +109,6 @@
     <string name="loading">"جارٍ التحميل…"</string>
     <string name="logcat">"سجلات الجهاز المباشرة"</string>
     <string name="logcat_description">"بث سجلات النظام مباشرة ومراقبة مخرجات التطبيقات وتشخيص الأعطال فوراً عبر ADB."</string>
-    <string name="miscellaneous">"متفرقات"</string>
     <string name="name_application">"اسم التطبيق: %s"</string>
     <string name="name_package">"اسم الحزمة: %s"</string>
     <string name="never">"أبداً"</string>
@@ -124,8 +120,6 @@
     <string name="permissions_storage_description">"📂 WRITE_EXTERNAL_STORAGE: مطلوب لحفظ آخر مخرجات الأوامر على جهازك (اختياري)"</string>
     <string name="permissions_title">"الأذونات المطلوبة"</string>
     <string name="press_back">"اضغط زر الرجوع مرة أخرى للخروج"</string>
-    <string name="privacy_policy">"سياسة الخصوصية"</string>
-    <string name="privacy_policy_description">"خصوصيتك مهمة: اعرف المزيد"</string>
     <string name="process_destroy_message">"aShell لا يزال يعمل. هل تريد إيقاف العملية الحالية؟"</string>
     <string name="quit">"خروج"</string>
     <string name="quit_app_message">"هل تريد الخروج من aShell؟"</string>
@@ -149,8 +143,6 @@
 1. افتح تطبيق Shizuku
 2. انتقل إلى التطبيقات المصرح لها
 3. فعّل الوصول لتطبيق aShell"</string>
-    <string name="shizuku_learn">"تعلم Shizuku"</string>
-    <string name="shizuku_learn_description">"اعرف المزيد عن Shizuku على: shizuku.rikka.app"</string>
     <string name="shizuku_open">"فتح Shizuku"</string>
     <string name="shizuku_unavailable_message">"Shizuku غير مثبت أو غير معد بشكل صحيح على جهازك. لن يعمل aShell بدون بيئة Shizuku صحيحة."</string>
     <string name="shizuku_unavailable_title">"لم يتم العثور على دعم Shizuku"</string>
@@ -160,8 +152,6 @@
     <string name="split_apks_count">"تم العثور على %d (اضغط لمعرفة المزيد)"</string>
     <string name="start">"ابدأ"</string>
     <string name="su_warning_message">"aShell غير مصمم للاستخدامات المرتبطة بالروت. تم الإيقاف."</string>
-    <string name="translations">"الترجمات"</string>
-    <string name="translations_description">"ساهم في ترجمة التطبيق"</string>
     <string name="user_interface">"واجهة المستخدم"</string>
     <string name="version">"الإصدار"</string>
     <string name="version_code">"رمز الإصدار"</string>

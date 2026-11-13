@@ -53,7 +53,6 @@ public class SettingsActivity extends BaseActivity {
     private List<SettingsEntry> getData() {
         List<SettingsEntry> mData = new ArrayList<>();
         mData.add(new SettingsEntry(getString(R.string.user_interface)));
-        mData.add(new SettingsEntry(1, R.mipmap.ic_launcher, getString(R.string.app_version, BuildConfig.VERSION_NAME), getString(R.string.copyright_text)));
         mData.add(new SettingsEntry(2, R.drawable.ic_theme, getString(R.string.app_theme), Settings.getAppTheme(this)));
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S && Settings.isDarkTheme(this)) {
             mData.add(new SettingsEntry(3, R.drawable.ic_amoled_theme, getString(R.string.app_theme_amoled), getString(R.string.app_theme_amoled_description), true, Settings.isAmoledBlackEnabled(this)));

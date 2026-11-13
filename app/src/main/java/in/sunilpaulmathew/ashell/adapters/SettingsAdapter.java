@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,7 +19,6 @@ import com.google.android.material.textview.MaterialTextView;
 
 import java.util.List;
 
-import in.sunilpaulmathew.ashell.BuildConfig;
 import in.sunilpaulmathew.ashell.R;
 import in.sunilpaulmathew.ashell.dialogs.ExamplesDialog;
 import in.sunilpaulmathew.ashell.dialogs.ExtrasDialog;
@@ -123,13 +121,7 @@ public class SettingsAdapter extends RecyclerView.Adapter<SettingsAdapter.ViewHo
         public void onClick(View view) {
             int position = data.get(getBindingAdapterPosition()).getPosition();
             Context context = view.getContext();
-            if (position == 1) {
-                Intent settings = new Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
-                settings.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                Uri uri = Uri.fromParts("package", BuildConfig.APPLICATION_ID, null);
-                settings.setData(uri);
-                context.startActivity(settings);
-            } else if (position == 2) {
+            if (position == 2) {
                 new SingleChoiceAlertDialog(R.drawable.ic_theme, context.getString(R.string.app_theme),
                         Settings.getAppThemeMenu(context), Settings.getAppThemePosition(context), context) {
 

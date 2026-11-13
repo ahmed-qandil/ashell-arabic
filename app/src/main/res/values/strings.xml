@@ -67,10 +67,8 @@
     <string name="delete">Delete</string>
     <string name="delete_success_toast">%s is successfully deleted…</string>
     <string name="deleting_message">Deleting %s…</string>
-    <string name="developer_contact">Contact developer</string>
-    <string name="developer_contact_description">Need help or have feedback? Contact the developer</string>
     <string name="disclaimer">Disclaimer</string>
-    <string name="disclaimer_description">\uD83E\uDDE9 Shizuku Dependency: aShell requires a fully working Shizuku environment to function. Please ensure Shizuku is set up before using this app.\n\uD83D\uDC68\u200D\uD83D\uDCBB Basic Knowledge Required: Familiarity with ADB and Linux command-line basics is recommended for effective use.\n\uD83C\uDF10 Open Source: aShell is open-source and free to build. Contributions and translations are welcome via GitLab and POEditor.\n⚠️ No Liability: We are not liable for any issues, data loss, or damage that may occur while using this app.</string>
+    <string name="disclaimer_description">\uD83E\uDDE9 Shizuku Dependency: aShell requires a fully working Shizuku environment to function. Please ensure Shizuku is set up before using this app.\n\uD83D\uDC68\u200D\uD83D\uDCBB Basic Knowledge Required: Familiarity with ADB and Linux command-line basics is recommended for effective use.\n⚠️ No Liability: We are not liable for any issues, data loss, or damage that may occur while using this app.</string>
     <string name="dismiss">Dismiss</string>
     <string name="edit">Edit</string>
     <string name="edit_title">Edit \"%s\" to:</string>
@@ -124,7 +122,6 @@
     <string name="loading">Loading…</string>
     <string name="logcat">Live device logs</string>
     <string name="logcat_description">Stream live system logs, monitor app outputs, and debug crashes instantly over ADB.</string>
-    <string name="miscellaneous">Miscellaneous</string>
     <string name="name_application">Application name: %s</string>
     <string name="name_package">Package name: %s</string>
     <string name="never">Never</string>
@@ -136,8 +133,6 @@
     <string name="permissions_storage_description">📂 WRITE_EXTERNAL_STORAGE: Needed to save the last command output to your device (optional)</string>
     <string name="permissions_title">Permissions required</string>
     <string name="press_back">Press back again to exit</string>
-    <string name="privacy_policy">Privacy policy</string>
-    <string name="privacy_policy_description">Your privacy matters: Learn more</string>
     <string name="process_destroy_message">aShell is still working. Do you want to stop the current process?</string>
     <string name="quit">Quit</string>
     <string name="quit_app_message">Do you want to quit aShell?</string>
@@ -157,8 +152,6 @@
     <string name="shizuku_access_denied_title">Shizuku access denied for aShell</string>
     <string name="shizuku_access_granted_message">aShell got access to Shizuku service. Click \'Start\' to continue</string>
     <string name="shizuku_app_open_message">To enable Shizuku on this device for aShell:\n\n1. Open the Shizuku app\n2. Go to Authorized applications\n3. Enable access for aShell</string>
-    <string name="shizuku_learn">Learn Shizuku</string>
-    <string name="shizuku_learn_description">Learn more about shizuku at: shizuku.rikka.app</string>
     <string name="shizuku_open">Open Shizuku</string>
     <string name="shizuku_unavailable_message">Shizuku is not installed or not properly configured on your device. aShell won\'t work without a proper Shizuku environment.</string>
     <string name="shizuku_unavailable_title">Shizuku support not found</string>
@@ -168,8 +161,6 @@
     <string name="split_apks_count">"%d found (tap to learn more)</string>
     <string name="start">Start</string>
     <string name="su_warning_message">aShell is not designed for root-related uses. Aborting.</string>
-    <string name="translations">Translations</string>
-    <string name="translations_description">Contribute to the app\'s translation</string>
     <string name="user_interface">User interface</string>
     <string name="version">Version</string>
     <string name="version_code">Version code</string>
