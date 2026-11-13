@@ -32,8 +32,6 @@
     <string name="app_version">"aShell %s"</string>
     <string name="authorize_click_message">"Klik untuk melakukan otorisasi"</string>
     <string name="copy_clipboard">"Salin ke papan klip"</string>
-    <string name="developer_contact">"Hubungi pengembang"</string>
-    <string name="developer_contact_description">"Butuh bantuan atau memiliki saran? Hubungi pengembang sekarang"</string>
     <string name="disclaimer">"Peringatan"</string>
     <string name="disclaimer_description">"\uD83E\uDDE9 Pustaka Shizuku: aShell membutuhkan Shizuku agar dapat berfungsi. Pastikan Shizuku telah diatur sebelum menggunakan aplikasi ini."</string>
     <string name="examples_description">"Jelajah perintah ADB populer"</string>
@@ -43,15 +41,9 @@
     <string name="granted">"Sukses"</string>
     <string name="language">"Bahasa"</string>
     <string name="permissions_title">"Izin yang diperlukan"</string>
-    <string name="privacy_policy">"Kebijakan privasi"</string>
-    <string name="privacy_policy_description">"Privasi anda penting: pelajari selengkapnya"</string>
     <string name="settings">"Pengaturan"</string>
     <string name="shizuku_access_denied_title">"Akses Shizuku ditolak oleh aShell"</string>
     <string name="shizuku_access_granted_message">"aShell mendapatkan akses ke layanan Shizuku. Tekan 'Mulai' untuk melanjutkan"</string>
-    <string name="shizuku_learn">"Pelajari Shizuku"</string>
-    <string name="shizuku_learn_description">"Pelajari selengkapnya terkait Shizuku: Shizuku.rikka.app"</string>
     <string name="shizuku_unavailable_title">"Dukungan Shizuku tidak ditemukan"</string>
-    <string name="translations">"Terjemahkan"</string>
-    <string name="translations_description">"Berkontribusi penerjemah aplikasi"</string>
     <string name="user_interface">"Antarmuka"</string>
 </resources>

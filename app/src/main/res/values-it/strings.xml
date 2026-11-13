@@ -32,8 +32,6 @@
     <string name="app_version">"aShell %s"</string>
     <string name="authorize_click_message">"Clicca per autorizzare"</string>
     <string name="copy_clipboard">"Copia negli appunti"</string>
-    <string name="developer_contact">"Contatta lo sviluppatore"</string>
-    <string name="developer_contact_description">"Hai bisogno di aiuto o vuoi lasciare un feedback? Contatta lo sviluppatore"</string>
     <string name="disclaimer">"Disclaimer"</string>
     <string name="disclaimer_description">"\uD83E\uDDE9 Dipendenza Shizuku: aShell richiede un ambiente Shizuku completamente funzionante per funzionare. Assicurarsi che Shizuku sia configurato prima di utilizzare questa app.
         \uD83D\uDC68\u200D\uD83D\uDCBB Conoscenze di base richieste: si consiglia la familiarità con ADB e le basi della riga di comando Linux per un utilizzo efficace.
@@ -48,20 +46,13 @@
     <string name="general">"Generale"</string>
     <string name="granted">"Concesso"</string>
     <string name="language">"Lingua"</string>
-    <string name="miscellaneous">"Varie"</string>
     <string name="permissions_shizuku_description">"🔐 moe.shizuku.manager.permission.API_V23: autorizzazione richiesta per utilizzare le API privilegiate di Shizuku"</string>
     <string name="permissions_storage_description">"📂 WRITE_EXTERNAL_STORAGE: necessario per salvare l'ultimo output del comando sul dispositivo (facoltativo)"</string>
     <string name="permissions_title">"Permessi richiesti"</string>
-    <string name="privacy_policy">"Politica sulla riservatezza"</string>
-    <string name="privacy_policy_description">"La tua privacy è importante: scopri di più"</string>
     <string name="settings">"Impostazioni"</string>
     <string name="shizuku_access_denied_title">"Accesso Shizuku negato per aShell"</string>
     <string name="shizuku_access_granted_message">"aShell ha ottenuto l'accesso al servizio Shizuku. Fare clic su \"Avvia\" per continuare"</string>
-    <string name="shizuku_learn">"Impara Shizuku"</string>
-    <string name="shizuku_learn_description">"Per saperne di più su shizuku: shizuku.rikka.app"</string>
     <string name="shizuku_unavailable_title">"Supporto Shizuku non trovato"</string>
-    <string name="translations">"Traduzioni"</string>
-    <string name="translations_description">"Contribuisci alla traduzione dell'app"</string>
     <string name="user_interface">"Interfaccia utente"</string>
     <string name="shizuku_app_open_message">"Per abilitare Shizuku su questo dispositivo per aShell:
 

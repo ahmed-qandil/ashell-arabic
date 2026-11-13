@@ -32,8 +32,6 @@
     <string name="app_version">"aShell %s"</string>
     <string name="authorize_click_message">"Kattints a jóváhagyáshoz"</string>
     <string name="copy_clipboard">"Másolás a vágólapra"</string>
-    <string name="developer_contact">"Kapcsolat a fejlesztővel"</string>
-    <string name="developer_contact_description">"Segítségre van szükséged vagy visszajelzést küldenél? Lépj kapcsolatba a fejlesztővel."</string>
     <string name="disclaimer">"Jogi nyilatkozat"</string>
     <string name="disclaimer_description">"\uD83E\uDDE9 Shizuku függőség: Az aShell működéséhez egy teljesen működő Shizuku környezetre van szükség. Kérlek, az alkalmazás használata előtt győződj meg arról, hogy a Shizuku be van állítva.
         \uD83D\uDC68\u200D\uD83D\uDCBB Alapvető ismeretek szükségesek: A hatékony használathoz ajánlott az ADB és a Linux parancssor alapfokú ismerete.
@@ -48,20 +46,13 @@
     <string name="general">"Általános"</string>
     <string name="granted">"Engedélyezve"</string>
     <string name="language">"Nyelv"</string>
-    <string name="miscellaneous">"Egyéb"</string>
     <string name="permissions_shizuku_description">"🔐 moe.shizuku.manager.permission.API_V23: Engedély szükséges a Shizuku kiváltságos API-jának használatához"</string>
     <string name="permissions_storage_description">"📂 WRITE_EXTERNAL_STORAGE: Szükséges az utolsó parancs kimenetének mentéséhez az eszközre (opcionális)"</string>
     <string name="permissions_title">"A szükséges engedélyek"</string>
-    <string name="privacy_policy">"Adatvédelmi irányelv"</string>
-    <string name="privacy_policy_description">"Fontos a magánéleted: Tudj meg többet"</string>
     <string name="settings">"Beállítások"</string>
     <string name="shizuku_access_denied_title">"A hozzáférés a Shizuku szolgáltatáshoz az aShell számára meg lett tagadva"</string>
     <string name="shizuku_access_granted_message">"Az aShell hozzáférést kapott a Shizuku szolgáltatáshoz. Kattints az »Indítás« gombra a folytatáshoz."</string>
-    <string name="shizuku_learn">"Ismerd meg a shizukut"</string>
-    <string name="shizuku_learn_description">"Tudj meg többet a shizukuról a következő címen: shizuku.rikka.app"</string>
     <string name="shizuku_unavailable_title">"A Shizuku támogatás nem található"</string>
-    <string name="translations">"Fordítás"</string>
-    <string name="translations_description">"Közreműködés az alkalmazás fordításában"</string>
     <string name="user_interface">"Felhasználói felület"</string>
     <string name="shizuku_app_open_message">"A Shizuku engedélyezése ezen az eszközön az aShell számára:
 

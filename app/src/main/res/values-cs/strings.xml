@@ -32,8 +32,6 @@
     <string name="app_version">"aShell %s"</string>
     <string name="authorize_click_message">"Stiskněte pro autorizaci"</string>
     <string name="copy_clipboard">"Zkopírovat do schránky"</string>
-    <string name="developer_contact">"Kontaktovat vývojáře"</string>
-    <string name="developer_contact_description">"Potřebujete pomoc nebo máte zpětnou vazbu? Kontaktujte vývojáře"</string>
     <string name="disclaimer">"Upozornění"</string>
     <string name="examples_description">"Projděte si populární ADB příkazy"</string>
     <string name="features_title">"Funkce"</string>

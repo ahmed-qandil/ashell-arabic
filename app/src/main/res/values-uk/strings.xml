@@ -32,8 +32,6 @@
     <string name="app_version">"Оболонка %s"</string>
     <string name="authorize_click_message">"Натисніть, щоб авторизувати"</string>
     <string name="copy_clipboard">"Копіювати в буфер обміну"</string>
-    <string name="developer_contact">"Зв'язатися з розробником"</string>
-    <string name="developer_contact_description">"Потрібна допомога або маєте відгук? Зверніться до розробника"</string>
     <string name="disclaimer">"Застереження"</string>
     <string name="disclaimer_description">"\uD83E\uDDE9 Залежність від Shizuku: Для роботи aShell потрібне повністю робоче середовище Shizuku. Будь ласка, переконайтеся, що Shizuku налаштовано перед використанням цієї програми.
         \uD83D\uDC68\u200D\uD83D\uDCBB Необхідні базові знання: Для ефективного використання рекомендується знайомство з ADB та основами командного рядка Linux.
@@ -48,20 +46,13 @@
     <string name="general">"Загальне"</string>
     <string name="granted">"Надано"</string>
     <string name="language">"Мова"</string>
-    <string name="miscellaneous">"Різне"</string>
     <string name="permissions_shizuku_description">"🔐 moe.shizuku.manager.permission.API_V23: для використання привілейованих API Shizuku потрібен дозвіл"</string>
     <string name="permissions_storage_description">"📂 WRITE_EXTERNAL_STORAGE: Потрібно для збереження останнього виводу команди на вашому пристрої (необов'язково)"</string>
     <string name="permissions_title">"Потрібні дозволи"</string>
-    <string name="privacy_policy">"Політика конфіденційності"</string>
-    <string name="privacy_policy_description">"Ваша конфіденційність має значення: Дізнайтеся більше"</string>
     <string name="settings">"Налаштування"</string>
     <string name="shizuku_access_denied_title">"Доступ до Shizuku для aShell заборонено"</string>
     <string name="shizuku_access_granted_message">"aShell отримав доступ до сервісу Shizuku. Натисніть «Пуск», щоб продовжити."</string>
-    <string name="shizuku_learn">"Вивчіть Сідзуку"</string>
-    <string name="shizuku_learn_description">"Дізнайтеся більше про шізуку за адресою: shizuku.rikka.app"</string>
     <string name="shizuku_unavailable_title">"Підтримка Shizuku не знайдена"</string>
-    <string name="translations">"Переклади"</string>
-    <string name="translations_description">"Зробіть свій внесок у переклад програми"</string>
     <string name="user_interface">"Інтерфейс користувача"</string>
     <string name="shizuku_app_open_message">"Щоб увімкнути Shizuku на цьому пристрої для aShell:
 

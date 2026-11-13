@@ -32,8 +32,6 @@
     <string name="app_version">"aShell %s"</string>
     <string name="authorize_click_message">"クリックして承認"</string>
     <string name="copy_clipboard">"クリップボードにコピーされました"</string>
-    <string name="developer_contact">"開発者に連絡"</string>
-    <string name="developer_contact_description">"ヘルプやフィードバックが必要な場合は、開発者にお問い合わせください"</string>
     <string name="disclaimer">"免責事項"</string>
     <string name="disclaimer_description">"\uD83E\uDDE9 Shizukuへの依存：aShellは、完全に動作するShizuku環境を必要とします。このアプリを使用する前に、Shizukuがセットアップされていることを確認してください。
         \uD83D\uDC68\u200D\uD83D\uDCBB 必須の基本知識：効果的に使用するには、ADBとLinuxコマンドラインの基礎知識が推奨されます。
@@ -48,20 +46,13 @@
     <string name="general">"一般"</string>
     <string name="granted">"付与された"</string>
     <string name="language">"言語"</string>
-    <string name="miscellaneous">"Miscellaneous"</string>
     <string name="permissions_shizuku_description">"🔐moe.shizuku.manager.permission.API_V23: Shizukuの特権APIを使用するために必要な権限"</string>
     <string name="permissions_storage_description">"📂 WRITE_EXTERNAL_STORAGE: 最後のコマンドのログをデバイスに保存するために必要(オプション)"</string>
     <string name="permissions_title">"必要な権限"</string>
-    <string name="privacy_policy">"プライバシーポリシー"</string>
-    <string name="privacy_policy_description">"プライバシーは重要です: 詳細はこちら"</string>
     <string name="settings">"設定"</string>
     <string name="shizuku_access_denied_title">"Shizukuへのアクセスが拒否されました"</string>
     <string name="shizuku_access_granted_message">"Shizukuに接続されました'開始'を押して続行してください。"</string>
-    <string name="shizuku_learn">"Shizukuについて学ぶ"</string>
-    <string name="shizuku_learn_description">"Shizukuの詳細については: shizuku.rikka.app をご覧ください"</string>
     <string name="shizuku_unavailable_title">"Shizukuが見つかりません"</string>
-    <string name="translations">"翻訳"</string>
-    <string name="translations_description">"アプリの翻訳に協力する"</string>
     <string name="user_interface">"ユーザーインターフェース"</string>
     <string name="shizuku_app_open_message">"aShellにShizukuアクセスを与える方法:
 

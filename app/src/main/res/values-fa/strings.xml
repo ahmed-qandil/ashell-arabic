@@ -27,8 +27,6 @@
     <string name="app_theme_light">"روشن"</string>
     <string name="authorize_click_message">"برای مجوز دادن ضربه بزنید"</string>
     <string name="copy_clipboard">"کپی در کلیپ‌بورد"</string>
-    <string name="developer_contact">"تماس با توسعه‌دهنده"</string>
-    <string name="developer_contact_description">"برای تماس با توسعه‌دهنده و ارسال بازخورد"</string>
     <string name="disclaimer">"سلب مسئولیت"</string>
     <string name="examples_description">"نمونه‌هایی از دستورات قابل استفاده"</string>
     <string name="features_title">"ویژگی‌ها"</string>
@@ -36,20 +34,13 @@
     <string name="general">"عمومی"</string>
     <string name="granted">"اعطا شد"</string>
     <string name="language">"زبان"</string>
-    <string name="miscellaneous">"متفرقه"</string>
     <string name="permissions_shizuku_description">"مجوز لازم برای استفاده از Shizuku"</string>
     <string name="permissions_storage_description">"مجوز دسترسی به حافظه دستگاه"</string>
     <string name="permissions_title">"مجوزها"</string>
-    <string name="privacy_policy">"حریم خصوصی"</string>
-    <string name="privacy_policy_description">"اطلاعات مربوط به نحوه جمع‌آوری و استفاده از داده‌ها"</string>
     <string name="settings">"تنظیمات"</string>
     <string name="shizuku_access_denied_title">"دسترسی Shizuku رد شد"</string>
     <string name="shizuku_access_granted_message">"دسترسی Shizuku با موفقیت اعطا شد"</string>
-    <string name="shizuku_learn">"آشنایی با Shizuku"</string>
-    <string name="shizuku_learn_description">"درباره Shizuku و نحوه استفاده از آن بیشتر بدانید"</string>
     <string name="shizuku_unavailable_title">"Shizuku در دسترس نیست"</string>
-    <string name="translations">"ترجمه‌ها"</string>
-    <string name="translations_description">"اطلاعات مربوط به ترجمه‌های برنامه"</string>
     <string name="user_interface">"رابط کاربری"</string>
     <string name="shizuku_open">"باز کردن Shizuku"</string>
 </resources>

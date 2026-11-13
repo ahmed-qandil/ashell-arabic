@@ -37,8 +37,6 @@
     <string name="app_version">"aShell %s"</string>
     <string name="authorize_click_message">"輕觸即可授予"</string>
     <string name="copy_clipboard">"複製到剪貼簿"</string>
-    <string name="developer_contact">"聯絡開發人員"</string>
-    <string name="developer_contact_description">"需要協助或提供意見嗎？請聯絡我們"</string>
     <string name="disclaimer">"免責聲明"</string>
     <string name="disclaimer_description">"\uD83E\uDDE9 Shizuku 架構：aShell 需要完整的 Shizuku 環境才能運作，使用前請先確認您已配置完成。
         \uD83D\uDC68\u200D\uD83D\uDCBB 基本概念：建議事先了解 ADB 與 Linux 命令相關知識以有效運用。
@@ -53,20 +51,13 @@
     <string name="general">"一般"</string>
     <string name="granted">"授予"</string>
     <string name="language">"語言"</string>
-    <string name="miscellaneous">"其他"</string>
     <string name="permissions_shizuku_description">"🔐 moe.shizuku.manager.permission.API_V23：需要使用 Shizuku 特殊 API 的權限"</string>
     <string name="permissions_storage_description">"📂 WRITE_EXTERNAL_STORAGE：將最後輸出的內容儲存至您的裝置 (選用)"</string>
     <string name="permissions_title">"權限要求"</string>
-    <string name="privacy_policy">"隱私權政策"</string>
-    <string name="privacy_policy_description">"與您的隱私相關：了解更多"</string>
     <string name="settings">"設定"</string>
     <string name="shizuku_access_denied_title">"aShell 存取 Shizuku 遭拒"</string>
     <string name="shizuku_access_granted_message">"aShell 已可存取 Shizuku 服務。輕觸「開始」繼續"</string>
-    <string name="shizuku_learn">"認識 Shizuku"</string>
-    <string name="shizuku_learn_description">"了解更多關於 Shizuku：shizuku.rikka.app"</string>
     <string name="shizuku_unavailable_title">"找不到 Shizuku 支援"</string>
-    <string name="translations">"翻譯"</string>
-    <string name="translations_description">"協助翻譯應用程式"</string>
     <string name="user_interface">"介面"</string>
     <string name="shizuku_app_open_message">"如要在裝置上連結 aShell 與 Shizuku：
 

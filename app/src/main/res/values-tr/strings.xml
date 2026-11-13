@@ -32,8 +32,6 @@
     <string name="app_version">"aShell %s"</string>
     <string name="authorize_click_message">"Yetkilendirmek için tıkla"</string>
     <string name="copy_clipboard">"Panoya kopyala"</string>
-    <string name="developer_contact">"Geliştirici ile iletişim kur"</string>
-    <string name="developer_contact_description">"Yardıma veya geri bildirime mi ihtiyacınız var? Geliştiriciyle iletişim kurun"</string>
     <string name="disclaimer">"Sorumluluk reddi"</string>
     <string name="disclaimer_description">"\uD83E\uDDE9 Shizuku İhtiyacı: aShell çalışmak için sorunsuz çalışan bir Shizuku ortamına ihtiyaç duyar. Kullanmadan önce lütfen Shizuku'nun kurulu olduğundan emin olun
         \uD83D\uDC68\u200D\uD83D\uDCBB Temel Deneyim Gerekli: ADB ve Linux komut satırı temelleri hakkında bilgi sahibi olması kullanıcı için faydalıdır.
@@ -48,20 +46,13 @@
     <string name="general">"Genel"</string>
     <string name="granted">"İzin verildi"</string>
     <string name="language">"Dil"</string>
-    <string name="miscellaneous">"Diğer"</string>
     <string name="permissions_shizuku_description">"🔐 moe.shizuku.manager.permission.API_V23: Shizuku'nun ayrıcalıklı API'lerini kullanmak için gerekli izin"</string>
     <string name="permissions_storage_description">"📂 WRITE_EXTERNAL_STORAGE: Son komut çıkışının cihaza kaydedilmesi için gerekli (isteğe bağlı)"</string>
     <string name="permissions_title">"İzin gerekli"</string>
-    <string name="privacy_policy">"Gizlilik politikası"</string>
-    <string name="privacy_policy_description">"Gizliliğin önemli: Dahasını öğren"</string>
     <string name="settings">"Ayarlar"</string>
     <string name="shizuku_access_denied_title">"aShell için Shizuku erişimi reddedildi"</string>
     <string name="shizuku_access_granted_message">"aShell Shizuku servisinden onayı aldı. Devam etmek için 'başlat' tuşuna bas"</string>
-    <string name="shizuku_learn">"Shizuku hakkında"</string>
-    <string name="shizuku_learn_description">"Shizuku hakkında dahası için: shizuku.rikka.app"</string>
     <string name="shizuku_unavailable_title">"Shizuku desteği bulunamadı"</string>
-    <string name="translations">"Çeviriler"</string>
-    <string name="translations_description">"Bu uygulamanın tercümesine katkıda bulunun"</string>
     <string name="user_interface">"Kullanıcı arayüzü"</string>
     <string name="shizuku_app_open_message">"Bu cihazda aShell için Shizukuyu etkinleştirirken:
 

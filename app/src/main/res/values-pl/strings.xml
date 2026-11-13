@@ -32,8 +32,6 @@
     <string name="app_version">"aShell %s"</string>
     <string name="authorize_click_message">"Kliknij, aby autoryzować"</string>
     <string name="copy_clipboard">"Kopiuj do schowka"</string>
-    <string name="developer_contact">"Kontakt z deweloperem"</string>
-    <string name="developer_contact_description">"Potrzebujesz pomocy lub masz opinię? Skontaktuj się z deweloperem"</string>
     <string name="disclaimer">"Zastrzeżenia"</string>
     <string name="disclaimer_description">"🧩 Wymóg Shizuku: aShell potrzebuje w pełni działającego środowiska Shizuku. Upewnij się, że jest skonfigurowane przed użyciem aplikacji.
         👨‍💻 Podstawowa wiedza: Znajomość ADB i podstawowych komend Linuksa przyda się do efektywnego korzystania.
@@ -48,19 +46,12 @@
     <string name="general">"Ogólne"</string>
     <string name="granted">"Udzielono"</string>
     <string name="language">"Język"</string>
-    <string name="miscellaneous">"Różne"</string>
     <string name="permissions_shizuku_description">"🔐 moe.shizuku.manager.permission.API_V23: Wymagane uprawnienie do korzystania z interfejsu API Shizuku"</string>
     <string name="permissions_storage_description">"📂 WRITE_EXTERNAL_STORAGE: Potrzebne do zapisania wyniku ostatniego polecenia na urządzeniu (opcjonalne)"</string>
     <string name="permissions_title">"Wymagane uprawnienia"</string>
-    <string name="privacy_policy">"Polityka prywatności"</string>
-    <string name="privacy_policy_description">"Twoja prywatność ma znaczenie: Dowiedz się więcej"</string>
     <string name="settings">"Ustawienia"</string>
     <string name="shizuku_access_denied_title">"Odmowa dostępu Shizuku dla aShell"</string>
     <string name="shizuku_access_granted_message">"aShell uzyskało dostęp do Shizuku. Naciśnij \"Start\", aby kontynuować"</string>
-    <string name="shizuku_learn">"Dowiedz się więcej o Shizuku"</string>
-    <string name="shizuku_learn_description">"Dowiedz się więcej o Shizuku na: shizuku.rikka.app"</string>
     <string name="shizuku_unavailable_title">"Shizuku niedostępne"</string>
-    <string name="translations">"Tłumaczenie"</string>
-    <string name="translations_description">"Pomóż w tłumaczeniu aplikacji"</string>
     <string name="user_interface">"Interfejs"</string>
 </resources>
