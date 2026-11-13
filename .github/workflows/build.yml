@@ -27,19 +27,21 @@ jobs:
       - name: Prepare artifacts
         run: |
           mkdir -p dist
-          cp app/build/outputs/apk/release/app-release-unsigned.apk "dist/aShell-v0.31-ar1-unsigned.apk"
-          zip -r "dist/aShell-v0.31-ar1-source.zip" . -x "./.git/*" "./dist/*" "./app/build/*" "./.gradle/*"
+          cp app/build/outputs/apk/release/app-release-unsigned.apk "dist/aShell-v0.31-ar2-unsigned.apk"
+          zip -r "dist/aShell-v0.31-ar2-source.zip" . -x "./.git/*" "./dist/*" "./app/build/*" "./.gradle/*"
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v0.31-ar1
-          name: aShell Arabic v0.31-ar1
+          tag_name: v0.31-ar2
+          name: aShell Arabic v0.31-ar2
           body: |
             Arabic localized, accessibility-friendly custom build of aShell (upstream v0.31, github.com/sunilpaulmathew/aShell, GPLv3).
             - Full Arabic translation (values-ar) covering every string, including previously hardcoded ones.
-            - TalkBack labels added to icon-only buttons.
-            - Completely clean settings: removed version/copyright row, Learn Shizuku link, Translations link, Privacy policy entry, Contact developer link; GitLab/POEditor mention stripped from the welcome text; Shizuku-not-found dialog link removed.
+            - Arabic TalkBack labels on all icon-only buttons (history, bookmarks, clear, search, send, scroll, back, sort, stop); decorative images excluded from the accessibility tree.
+            - Languages stripped to Arabic + English; in-app language picker offers only working options (System default / العربية / English US).
+            - Completely clean settings: removed version/copyright row, Learn Shizuku (link, drawables and dead code), Translations link, Privacy policy entry and its dead screen code, Contact developer link, and the dead "User interface"/"General" section headers - every remaining settings row is functional.
+            - GitLab/POEditor mention stripped from the welcome text.
             - No defaults of user-toggleable settings changed.
             - Unsigned release APK: sign it yourself before installing.
           files: dist/*
