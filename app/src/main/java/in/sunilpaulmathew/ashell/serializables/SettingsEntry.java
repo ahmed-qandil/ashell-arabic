@@ -60,23 +60,16 @@ public class SettingsEntry implements Serializable {
     public int getIconColor(Context context) {
         boolean dark = Settings.isDarkTheme(context);
         String hexColor;
-        if (this.mIcon == R.drawable.ic_language ||
-                this.mIcon == R.drawable.ic_translate) {
+        if (this.mIcon == R.drawable.ic_language) {
             hexColor = dark ? "#4DB6AC" : "#00796B";
         } else if (this.mIcon == R.drawable.ic_amoled_theme) {
             hexColor = dark ? "#58A6FF" : "#0969DA";
         } else if (this.mIcon == R.drawable.ic_extras) {
             hexColor = dark ? "#CE93D8" : "#7B1FA2";
-        } else if (this.mIcon == R.drawable.ic_email) {
-            hexColor = dark ? "#F48FB1" : "#C2185B";
-        } else if (this.mIcon == R.drawable.ic_privacy) {
-            hexColor = dark ? "#90A4AE" : "#455A64";
         } else if (this.mIcon == R.drawable.ic_help) {
             hexColor = dark ? "#4FC3F7" : "#0277BD";
         } else if (this.mIcon == R.drawable.ic_theme) {
             hexColor = dark ? "#FFB74D" : "#E65100";
-        } else if (this.mIcon == R.drawable.ic_learn) {
-            hexColor = dark ? "#9FA8DA" : "#3F51B5";
         } else if (this.mIcon == R.mipmap.ic_launcher) {
             return Integer.MIN_VALUE;
         } else {

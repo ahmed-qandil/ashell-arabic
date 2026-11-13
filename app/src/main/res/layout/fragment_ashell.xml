@@ -16,6 +16,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/history"
+                android:contentDescription="@string/history"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent"
@@ -27,6 +28,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/bookmarks"
+                android:contentDescription="@string/bookmarks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="?attr/materialIconButtonFilledTonalStyle"
@@ -38,6 +40,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/clear"
+                android:contentDescription="@string/clear_all"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="?attr/materialIconButtonFilledTonalStyle"
@@ -49,6 +52,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/search"
+                android:contentDescription="@string/cd_search"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="?attr/materialIconButtonFilledTonalStyle"
@@ -69,6 +73,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/search_word"
+                android:hint="@string/cd_search_hint"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:drawableStart="@drawable/ic_search"
@@ -129,6 +134,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/send"
+                android:contentDescription="@string/cd_send_command"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="?attr/materialIconButtonFilledTonalStyle"
@@ -171,6 +177,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/top"
+                android:contentDescription="@string/cd_scroll_top"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="?attr/materialIconButtonFilledTonalStyle"
@@ -183,6 +190,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/bottom"
+                android:contentDescription="@string/cd_scroll_bottom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="?attr/materialIconButtonFilledTonalStyle"

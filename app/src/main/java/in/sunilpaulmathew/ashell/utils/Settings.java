@@ -28,7 +28,6 @@ import java.util.Objects;
 import in.sunilpaulmathew.ashell.R;
 import in.sunilpaulmathew.ashell.activities.aShellActivity;
 import in.sunilpaulmathew.ashell.dialogs.SingleChoiceAlertDialog;
-import in.sunilpaulmathew.ashell.serializables.CommandEntry;
 import in.sunilpaulmathew.ashell.serializables.ExtrasEntry;
 
 /*
@@ -157,66 +156,14 @@ public class Settings {
     }
 
     private static int getLanguagePosition(Context context) {
-        String country = getCountry(context);
         switch (getLanguage(context)) {
-            case "ro":
-                return 27;
-            case "fa":
-                return 26;
-            case "uk":
-                return 24;
-            case "tr":
-                return 23;
-            case "th":
-                return 22;
-            case "it":
-                return 21;
-            case "cs":
-                return 20;
-            case "de":
-                return country.equalsIgnoreCase("BE") ? 19 : 18;
             case "ar":
-                return 17;
-            case "pl":
-                return 16;
-            case "fr":
-                return 15;
-            case "ja":
-                return 14;
-            case "ko":
-                return 13;
-            case "zh":
-                return country.equalsIgnoreCase("HK") ? 12 : country.equalsIgnoreCase("CN") ? 11 : 10;
-            case "ru":
-                return 9;
-            case "es":
-                return country.equalsIgnoreCase("AR") ? 25 : country.equalsIgnoreCase("MX") ? 8 : 7;
-            case "pt":
-                return country.equalsIgnoreCase("BR") ? 5 : 6;
-            case "in":
-                return 4;
-            case "hu":
-                return 3;
-            case "en":
-                return country.equalsIgnoreCase("us") ? 2 : 0;
-            case "el":
                 return 1;
+            case "en":
+                return Objects.equals(getCountry(context), "US") ? 2 : 0;
             default:
                 return 0;
         }
-    }
-
-    public static List<CommandEntry> getPolicyData() {
-        List<CommandEntry> mData = new ArrayList<>();
-        mData.add(new CommandEntry("Introduction", "aShell is developed by one main developer, sunilpaulmathew, leveraging code from various open-source projects. This Privacy Policy outlines how we handle user privacy."));
-        mData.add(new CommandEntry("Scope", "This policy applies exclusively to the original version of aShell published by the developer on Google Play, F-Droid, IzzyOnDroid, and GitHub."));
-        mData.add(new CommandEntry("Personal Information", "We do not collect, store, or share any personal information about our users. User identities remain anonymous. If we inadvertently receive any personal information, we will not disclose or share it with third parties."));
-        mData.add(new CommandEntry("Permissions", "aShell requires the following permissions to deliver its features:" +
-                "\n\uD83D\uDD10 moe.shizuku.manager.permission.API_V23: Permission required to use Shizuku’s privileged APIs." +
-                "\n\uD83D\uDCC2 WRITE_EXTERNAL_STORAGE: Allows aShell to write recent command results to device storage."));
-        mData.add(new CommandEntry("Contact Us", "If you have questions or concerns about this Privacy Policy, please contact us at: smartpack.org@gmail.com"));
-        mData.add(new CommandEntry("Changes to This Policy", "We may update this policy from time to time. Changes will be posted here."));
-        return mData;
     }
 
     public static List<ExtrasEntry> getExtras() {
@@ -250,60 +197,17 @@ public class Settings {
     }
 
     public static String getLanguageDescription(Context context) {
-        String country = getCountry(context);
         switch (getLanguage(context)) {
             case "ar":
                 return context.getString(R.string.language_ar, "AR");
-            case "de":
-                return context.getString(R.string.language_de, country.equalsIgnoreCase("BE") ? "BE" : "DE");
             case "en":
-                return country.equalsIgnoreCase("US") ? context.getString(R.string.language_en, "US")
-                        : context.getString(R.string.app_theme_auto);
-            case "el":
-                return context.getString(R.string.language_el);
-            case "es":
-                return context.getString(R.string.language_es, country.equalsIgnoreCase("AR") ? "AR"
-                        : country.equalsIgnoreCase("MX") ? "MX" : "ES");
-            case "fa":
-                return context.getString(R.string.language_fa);
-            case "fr":
-                return context.getString(R.string.language_fr, "FR");
-            case "pl":
-                return context.getString(R.string.language_pl);
-            case "pt":
-                return context.getString(R.string.language_pt, country.equalsIgnoreCase("BR") ? "BR" : "PT");
-            case "ru":
-                return context.getString(R.string.language_ru);
-            case "ro":
-                return context.getString(R.string.language_ro);
-            case "hu":
-                return context.getString(R.string.language_hu);
-            case "in":
-                return context.getString(R.string.language_in);
-            case "ja":
-                return context.getString(R.string.language_ja);
-            case "ko":
-                return context.getString(R.string.language_ko);
-            case "cs":
-                return context.getString(R.string.language_cs);
-            case "it":
-                return context.getString(R.string.language_it);
-            case "th":
-                return context.getString(R.string.language_th);
-            case "tr":
-                return context.getString(R.string.language_tr);
-            case "uk":
-                return context.getString(R.string.language_uk);
-            case "zh":
-                return country.equalsIgnoreCase("HK") ? context.getString(R.string.language_zh, "Hant")
-                        : country.equalsIgnoreCase("CN") ? context.getString(R.string.language_zh, "Hans")
-                        : country.equalsIgnoreCase("TW") ? context.getString(R.string.language_zh, "TW")
+                return Objects.equals(getCountry(context), "US")
+                        ? context.getString(R.string.language_en, "US")
                         : context.getString(R.string.app_theme_auto);
             default:
                 return context.getString(R.string.app_theme_auto);
         }
     }
-
     public static String[] getAppThemeMenu(Context context) {
         return new String[] {
                 context.getString(R.string.app_theme_auto),
@@ -315,36 +219,10 @@ public class Settings {
     private static String[] getLanguageMenu(Context context) {
         return new String[] {
                 context.getString(R.string.app_theme_auto),
-                context.getString(R.string.language_el),
-                context.getString(R.string.language_en, "US"),
-                context.getString(R.string.language_hu),
-                context.getString(R.string.language_in),
-                context.getString(R.string.language_pt, "BR"),
-                context.getString(R.string.language_pt, "PT"),
-                context.getString(R.string.language_es, "ES"),
-                context.getString(R.string.language_es, "MX"),
-                context.getString(R.string.language_ru),
-                context.getString(R.string.language_zh, "TW"),
-                context.getString(R.string.language_zh, "Hans"),
-                context.getString(R.string.language_zh, "Hant"),
-                context.getString(R.string.language_ko),
-                context.getString(R.string.language_ja),
-                context.getString(R.string.language_fr, "FR"),
-                context.getString(R.string.language_pl),
                 context.getString(R.string.language_ar, "AR"),
-                context.getString(R.string.language_de, "DE"),
-                context.getString(R.string.language_de, "BE"),
-                context.getString(R.string.language_cs),
-                context.getString(R.string.language_it),
-                context.getString(R.string.language_th),
-                context.getString(R.string.language_tr),
-                context.getString(R.string.language_uk),
-                context.getString(R.string.language_es, "AR"),
-                context.getString(R.string.language_fa),
-                context.getString(R.string.language_ro)
+                context.getString(R.string.language_en, "US")
         };
     }
-
     public static void initializeAppTheme(Context context) {
         int appTheme = Utils.getInt("appTheme", 0, context);
         switch (appTheme) {
@@ -403,18 +281,11 @@ public class Settings {
             @Override
             public void onItemSelected(int position) {
                 switch (position) {
-                    case 0:
-                        if (Objects.equals(getLanguage(activity), Locale.getDefault().getLanguage()) && Objects.equals(getCountry(activity), Locale.getDefault().getCountry())) {
-                            return;
-                        }
-                        Utils.saveString("appLanguage", java.util.Locale.getDefault().getLanguage(), activity);
-                        Utils.saveString("country", java.util.Locale.getDefault().getCountry(), activity);
-                        break;
                     case 1:
-                        if (Objects.equals(getLanguage(activity), "el") && Objects.equals(getCountry(activity), null)) {
+                        if (Objects.equals(getLanguage(activity), "ar") && Objects.equals(getCountry(activity), null)) {
                             return;
                         }
-                        Utils.saveString("appLanguage", "el", activity);
+                        Utils.saveString("appLanguage", "ar", activity);
                         Utils.saveString("country", null, activity);
                         break;
                     case 2:
@@ -424,187 +295,18 @@ public class Settings {
                         Utils.saveString("appLanguage", "en", activity);
                         Utils.saveString("country", "US", activity);
                         break;
-                    case 3:
-                        if (Objects.equals(getLanguage(activity), "hu") && Objects.equals(getCountry(activity), null)) {
+                    default:
+                        if (Objects.equals(getLanguage(activity), Locale.getDefault().getLanguage()) && Objects.equals(getCountry(activity), Locale.getDefault().getCountry())) {
                             return;
                         }
-                        Utils.saveString("appLanguage", "hu", activity);
-                        Utils.saveString("country", null, activity);
-                        break;
-                    case 4:
-                        if (Objects.equals(getLanguage(activity), "in") && Objects.equals(getCountry(activity), null)) {
-                            return;
-                        }
-                        Utils.saveString("appLanguage", "in", activity);
-                        Utils.saveString("country", null, activity);
-                        break;
-                    case 5:
-                        if (Objects.equals(getLanguage(activity), "pt") && Objects.equals(getCountry(activity), "BR")) {
-                            return;
-                        }
-                        Utils.saveString("appLanguage", "pt", activity);
-                        Utils.saveString("country", "BR", activity);
-                        break;
-                    case 6:
-                        if (Objects.equals(getLanguage(activity), "pt") && Objects.equals(getCountry(activity), "PT")) {
-                            return;
-                        }
-                        Utils.saveString("appLanguage", "pt", activity);
-                        Utils.saveString("country", "PT", activity);
-                        break;
-                    case 7:
-                        if (Objects.equals(getLanguage(activity), "es") && Objects.equals(getCountry(activity), null)) {
-                            return;
-                        }
-                        Utils.saveString("appLanguage", "es", activity);
-                        Utils.saveString("country", null, activity);
-                        break;
-                    case 8:
-                        if (Objects.equals(getLanguage(activity), "es") && Objects.equals(getCountry(activity), "MX")) {
-                            return;
-                        }
-                        Utils.saveString("appLanguage", "es", activity);
-                        Utils.saveString("country", "MX", activity);
-                        break;
-                    case 9:
-                        if (Objects.equals(getLanguage(activity), "ru") && Objects.equals(getCountry(activity), null)) {
-                            return;
-                        }
-                        Utils.saveString("appLanguage", "ru", activity);
-                        Utils.saveString("country", null, activity);
-                        break;
-                    case 10:
-                        if (Objects.equals(getLanguage(activity), "zh") && Objects.equals(getCountry(activity), "TW")) {
-                            return;
-                        }
-                        Utils.saveString("appLanguage", "zh", activity);
-                        Utils.saveString("country", "TW", activity);
-                        break;
-                    case 11:
-                        if (Objects.equals(getLanguage(activity), "zh") && Objects.equals(getCountry(activity), "CN")) {
-                            return;
-                        }
-                        Utils.saveString("appLanguage", "zh", activity);
-                        Utils.saveString("country", "CN", activity);
-                        break;
-                    case 12:
-                        if (Objects.equals(getLanguage(activity), "zh") && Objects.equals(getCountry(activity), "HK")) {
-                            return;
-                        }
-                        Utils.saveString("appLanguage", "zh", activity);
-                        Utils.saveString("country", "HK", activity);
-                        break;
-                    case 13:
-                        if (Objects.equals(getLanguage(activity), "ko") && Objects.equals(getCountry(activity), null)) {
-                            return;
-                        }
-                        Utils.saveString("appLanguage", "ko", activity);
-                        Utils.saveString("country", null, activity);
-                        break;
-                    case 14:
-                        if (Objects.equals(getLanguage(activity), "ja") && Objects.equals(getCountry(activity), null)) {
-                            return;
-                        }
-                        Utils.saveString("appLanguage", "ja", activity);
-                        Utils.saveString("country", null, activity);
-                        break;
-                    case 15:
-                        if (Objects.equals(getLanguage(activity), "fr") && Objects.equals(getCountry(activity), null)) {
-                            return;
-                        }
-                        Utils.saveString("appLanguage", "fr", activity);
-                        Utils.saveString("country", null, activity);
-                        break;
-                    case 16:
-                        if (Objects.equals(getLanguage(activity), "pl") && Objects.equals(getCountry(activity), null)) {
-                            return;
-                        }
-                        Utils.saveString("appLanguage", "pl", activity);
-                        Utils.saveString("country", null, activity);
-                        break;
-                    case 17:
-                        if (Objects.equals(getLanguage(activity), "ar") && Objects.equals(getCountry(activity), null)) {
-                            return;
-                        }
-                        Utils.saveString("appLanguage", "ar", activity);
-                        Utils.saveString("country", null, activity);
-                        break;
-                    case 18:
-                        if (Objects.equals(getLanguage(activity), "de") && Objects.equals(getCountry(activity), "DE")) {
-                            return;
-                        }
-                        Utils.saveString("appLanguage", "de", activity);
-                        Utils.saveString("country", "DE", activity);
-                        break;
-                    case 19:
-                        if (Objects.equals(getLanguage(activity), "de") && Objects.equals(getCountry(activity), "BE")) {
-                            return;
-                        }
-                        Utils.saveString("appLanguage", "de", activity);
-                        Utils.saveString("country", "BE", activity);
-                        break;
-                    case 20:
-                        if (Objects.equals(getLanguage(activity), "cs") && Objects.equals(getCountry(activity), null)) {
-                            return;
-                        }
-                        Utils.saveString("appLanguage", "cs", activity);
-                        Utils.saveString("country", null, activity);
-                        break;
-                    case 21:
-                        if (Objects.equals(getLanguage(activity), "it") && Objects.equals(getCountry(activity), null)) {
-                            return;
-                        }
-                        Utils.saveString("appLanguage", "it", activity);
-                        Utils.saveString("country", null, activity);
-                        break;
-                    case 22:
-                        if (Objects.equals(getLanguage(activity), "th") && Objects.equals(getCountry(activity), null)) {
-                            return;
-                        }
-                        Utils.saveString("appLanguage", "th", activity);
-                        Utils.saveString("country", null, activity);
-                        break;
-                    case 23:
-                        if (Objects.equals(getLanguage(activity), "tr") && Objects.equals(getCountry(activity), null)) {
-                            return;
-                        }
-                        Utils.saveString("appLanguage", "tr", activity);
-                        Utils.saveString("country", null, activity);
-                        break;
-                    case 24:
-                        if (Objects.equals(getLanguage(activity), "uk") && Objects.equals(getCountry(activity), null)) {
-                            return;
-                        }
-                        Utils.saveString("appLanguage", "uk", activity);
-                        Utils.saveString("country", null, activity);
-                        break;
-                    case 25:
-                        if (Objects.equals(getLanguage(activity), "es") && Objects.equals(getCountry(activity), "AR")) {
-                            return;
-                        }
-                        Utils.saveString("appLanguage", "es", activity);
-                        Utils.saveString("country", "AR", activity);
-                        break;
-                    case 26:
-                        if (Objects.equals(getLanguage(activity), "fa") && Objects.equals(getCountry(activity), null)) {
-                            return;
-                        }
-                        Utils.saveString("appLanguage", "fa", activity);
-                        Utils.saveString("country", null, activity);
-                        break;
-                    case 27:
-                        if (Objects.equals(getLanguage(activity), "ro") && Objects.equals(getCountry(activity), null)) {
-                            return;
-                        }
-                        Utils.saveString("appLanguage", "ro", activity);
-                        Utils.saveString("country", null, activity);
+                        Utils.saveString("appLanguage", java.util.Locale.getDefault().getLanguage(), activity);
+                        Utils.saveString("country", java.util.Locale.getDefault().getCountry(), activity);
                         break;
                 }
                 restartApp(activity);
             }
         }.show();
     }
-
     public static void setSlideInAnimation(final View viewToAnimate, int position) {
         // Only animate items appearing for the first time
         if (position > -1) {

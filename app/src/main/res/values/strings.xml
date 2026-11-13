@@ -60,7 +60,6 @@
     <string name="copying_message">"Copying %s…"</string>
     <string name="copying_failed_toast">"Copying %s is failed…"</string>
     <string name="copying_succeed_toast">"%s is copied to Downloads -> aShell…"</string>
-    <string name="copyright_text">Copyright: © 2022–2026, sunilpaulmathew</string>
     <string name="cpu_monitor">CPU monitor</string>
     <string name="cpu_monitor_description">Real-time processor utilization, historical load averages, and process-level resource tracking via ADB.</string>
     <string name="cpu_monitor_load">Load: %s</string>
@@ -169,4 +168,12 @@
     <string name="cd_bookmark_remove">"Remove from bookmarks"</string>
     <string name="cd_expand">"Expand"</string>
     <string name="cd_collapse">"Collapse"</string>
+    <string name="cd_back">Back</string>
+    <string name="cd_sort">Sort apps</string>
+    <string name="cd_stop">Stop</string>
+    <string name="cd_search">Search</string>
+    <string name="cd_search_hint">Search in output</string>
+    <string name="cd_send_command">Run command</string>
+    <string name="cd_scroll_top">Scroll to top</string>
+    <string name="cd_scroll_bottom">Scroll to bottom</string>
 </resources>

@@ -64,7 +64,6 @@
     <string name="copying_message">"جارٍ نسخ %s…"</string>
     <string name="copying_failed_toast">"فشل نسخ %s…"</string>
     <string name="copying_succeed_toast">"تم نسخ %s إلى التنزيلات -> aShell…"</string>
-    <string name="copyright_text">"حقوق النشر: © 2022–2026، sunilpaulmathew"</string>
     <string name="cpu_monitor">"مراقب المعالج"</string>
     <string name="cpu_monitor_description">"متابعة فورية لاستخدام المعالج ومتوسطات الحمل وموارد العمليات عبر ADB."</string>
     <string name="cpu_monitor_load">"الحمل: %s"</string>
@@ -156,4 +155,12 @@
     <string name="version">"الإصدار"</string>
     <string name="version_code">"رمز الإصدار"</string>
     <string name="yes">"نعم"</string>
+    <string name="cd_back">رجوع</string>
+    <string name="cd_sort">فرز التطبيقات</string>
+    <string name="cd_stop">إيقاف</string>
+    <string name="cd_search">بحث</string>
+    <string name="cd_search_hint">ابحث في المخرجات</string>
+    <string name="cd_send_command">تنفيذ الأمر</string>
+    <string name="cd_scroll_top">الانتقال إلى الأعلى</string>
+    <string name="cd_scroll_bottom">الانتقال إلى الأسفل</string>
 </resources>

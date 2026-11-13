@@ -379,14 +379,14 @@ public class aShellFragment extends BaseFragment {
             }
         });
 
-        mTopArrow.setOnClickListener(v -> new ButtonAnimator(mTopArrow, "to Top") {
+        mTopArrow.setOnClickListener(v -> new ButtonAnimator(mTopArrow, getString(R.string.cd_scroll_top)) {
             @Override
             public void onItemClicked() {
                 mRecyclerViewOutput.scrollToPosition(0);
             }
         });
 
-        mBottomArrow.setOnClickListener(v -> new ButtonAnimator(mBottomArrow, "to Bottom") {
+        mBottomArrow.setOnClickListener(v -> new ButtonAnimator(mBottomArrow, getString(R.string.cd_scroll_bottom)) {
             @Override
             public void onItemClicked() {
                 mRecyclerViewOutput.scrollToPosition(Objects.requireNonNull(
