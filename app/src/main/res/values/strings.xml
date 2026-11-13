@@ -174,4 +174,8 @@
     <string name="version">Version</string>
     <string name="version_code">Version code</string>
     <string name="yes">Yes</string>
+    <string name="cd_bookmark_add">"Bookmark this command"</string>
+    <string name="cd_bookmark_remove">"Remove from bookmarks"</string>
+    <string name="cd_expand">"Expand"</string>
+    <string name="cd_collapse">"Collapse"</string>
 </resources>

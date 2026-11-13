@@ -24,7 +24,6 @@ import in.sunilpaulmathew.ashell.BuildConfig;
 import in.sunilpaulmathew.ashell.R;
 import in.sunilpaulmathew.ashell.dialogs.ExamplesDialog;
 import in.sunilpaulmathew.ashell.dialogs.ExtrasDialog;
-import in.sunilpaulmathew.ashell.dialogs.PolicyDialog;
 import in.sunilpaulmathew.ashell.dialogs.SingleChoiceAlertDialog;
 import in.sunilpaulmathew.ashell.serializables.ExtrasChooserEntry;
 import in.sunilpaulmathew.ashell.serializables.SettingsEntry;
@@ -200,14 +199,6 @@ public class SettingsAdapter extends RecyclerView.Adapter<SettingsAdapter.ViewHo
                         activity.finish();
                     }
                 };
-            } else if (position == 7) {
-                Utils.loadUrl("https://shizuku.rikka.app/", context);
-            } else if (position == 8) {
-                Utils.loadUrl("https://poeditor.com/join/project/20PSoEAgfX", context);
-            } else if (position == 9) {
-                new PolicyDialog(context);
-            } else if (position == 10) {
-                Utils.loadUrl("mailto:smartpack.org@gmail.com", context);
             }
         }
     }

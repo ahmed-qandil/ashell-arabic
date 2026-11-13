@@ -555,11 +555,11 @@ public class aShellFragment extends BaseFragment {
         if (Utils.isBookmarked(string, requireActivity())) {
             Utils.deleteFromBookmark(string, requireActivity());
             Utils.toast(getString(R.string.bookmark_removed_message, string), requireActivity()).show();
-            mBookMark.setContentDescription("Bookmark command");
+            mBookMark.setContentDescription(getString(R.string.cd_bookmark_add));
         } else {
             Utils.addToBookmark(string, requireActivity());
             Utils.toast(getString(R.string.bookmark_added_message, string), requireActivity()).show();
-            mBookMark.setContentDescription(getString(R.string.bookmark_removed_message, string));
+            mBookMark.setContentDescription(getString(R.string.cd_bookmark_remove));
         }
         mBookMark.setImageDrawable(Utils.getDrawable(Utils.isBookmarked(string, requireActivity()) ? R.drawable.ic_starred : R.drawable.ic_star, requireActivity()));
         updateBookmarksButton();

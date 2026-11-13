@@ -222,9 +222,9 @@ public class Utils {
 
     public static void copyToClipboard(String text, Context context) {
         ClipboardManager clipboard = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
-        ClipData clip = ClipData.newPlainText("Copied to clipboard", text);
+        ClipData clip = ClipData.newPlainText(context.getString(R.string.copy_clipboard), text);
         clipboard.setPrimaryClip(clip);
-        Toast.makeText(context, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, context.getString(R.string.copy_clipboard), Toast.LENGTH_SHORT).show();
     }
 
     public static void create(String text, File path) {
